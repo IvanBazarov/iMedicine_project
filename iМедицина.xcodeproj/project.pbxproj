@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE023A563A56EA71C91C4232 /* Pods_iMedicine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD57F106B3735000AFEB268D /* Pods_iMedicine.framework */; };
+		FE07FD331F0EAC6D0040B060 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE07FD321F0EAC6D0040B060 /* SearchModel.swift */; };
+		FE1D89031F36295F00379625 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1D89021F36295F00379625 /* MarkerInfoView.swift */; };
+		FE1D89051F36297800379625 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1D89041F36297800379625 /* MarkerInfoView.xib */; };
+		FE1D89071F37787900379625 /* SearchPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1D89061F37787900379625 /* SearchPlaceModel.swift */; };
+		FE1D89091F391F5F00379625 /* LocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1D89081F391F5F00379625 /* LocationView.xib */; };
+		FE1D890B1F39263F00379625 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1D890A1F39263F00379625 /* LocationView.swift */; };
+		FE1D890D1F3A794200379625 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1D890C1F3A794200379625 /* ActivityIndicatorView.swift */; };
+		FE24ED881EF9F0FA004F34F9 /* MedicineDatabaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24ED871EF9F0FA004F34F9 /* MedicineDatabaseClass.swift */; };
+		FE2BB8C61EFC1ADF00727E70 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2BB8C51EFC1ADF00727E70 /* AboutTableViewController.swift */; };
+		FE2FFB101F1E3FF2002BC31E /* WarningTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2FFB0F1F1E3FF2002BC31E /* WarningTableViewController.swift */; };
+		FE2FFB121F1E4886002BC31E /* WarningCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2FFB111F1E4886002BC31E /* WarningCustomTableViewCell.swift */; };
+		FE48CDED1F0AD7BC00DA1342 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE48CDEC1F0AD7BC00DA1342 /* MapKit.framework */; };
+		FE48CDEF1F0ADA5900DA1342 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48CDEE1F0ADA5900DA1342 /* MapViewController.swift */; };
+		FE48CDF11F0AE00900DA1342 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE48CDF01F0AE00900DA1342 /* CoreLocation.framework */; };
+		FE635F851F30874500C18160 /* MedDBNew.db in Resources */ = {isa = PBXBuildFile; fileRef = FE635F841F30874500C18160 /* MedDBNew.db */; };
+		FE7580401F41B35100F139B3 /* AboutCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75803F1F41B35100F139B3 /* AboutCustomTableViewCell.swift */; };
+		FEC1ABB61EAE57B800887A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1ABB51EAE57B800887A58 /* AppDelegate.swift */; };
+		FEC1ABBB1EAE57B800887A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC1ABB91EAE57B800887A58 /* Main.storyboard */; };
+		FEC1ABC01EAE57B800887A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC1ABBF1EAE57B800887A58 /* Assets.xcassets */; };
+		FEC1ABC31EAE57B800887A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC1ABC11EAE57B800887A58 /* LaunchScreen.storyboard */; };
+		FEC1ABCD1EAE5A1F00887A58 /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1ABCC1EAE5A1F00887A58 /* MedicineTableViewController.swift */; };
+		FEC1ABCF1EAE5D2100887A58 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1ABCE1EAE5D2100887A58 /* CustomTableViewCell.swift */; };
+		FEC1ABD11EAE833500887A58 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1ABD01EAE833500887A58 /* DetailViewController.swift */; };
+		FEC1ABD51EB272C700887A58 /* MedicineCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1ABD41EB272C700887A58 /* MedicineCustomTableViewCell.swift */; };
+		FEC795BC1F2125FB0037460D /* StructOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC795BB1F2125FB0037460D /* StructOperation.swift */; };
+		FEE81B401EFAD725006FCBC5 /* MedicineDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE81B3F1EFAD725006FCBC5 /* MedicineDatabase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3799D3194A7036D799E71DDD /* Pods-iMedicine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMedicine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMedicine/Pods-iMedicine.debug.xcconfig"; sourceTree = "<group>"; };
+		C9D49F62DFBCF81DB68CF0F6 /* Pods-iMedicine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMedicine.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMedicine/Pods-iMedicine.release.xcconfig"; sourceTree = "<group>"; };
+		DD57F106B3735000AFEB268D /* Pods_iMedicine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMedicine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE07FD321F0EAC6D0040B060 /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		FE1D89021F36295F00379625 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		FE1D89041F36297800379625 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		FE1D89061F37787900379625 /* SearchPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceModel.swift; sourceTree = "<group>"; };
+		FE1D89081F391F5F00379625 /* LocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationView.xib; sourceTree = "<group>"; };
+		FE1D890A1F39263F00379625 /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		FE1D890C1F3A794200379625 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		FE24ED871EF9F0FA004F34F9 /* MedicineDatabaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineDatabaseClass.swift; sourceTree = "<group>"; };
+		FE2BB8C51EFC1ADF00727E70 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		FE2FFB0F1F1E3FF2002BC31E /* WarningTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningTableViewController.swift; sourceTree = "<group>"; };
+		FE2FFB111F1E4886002BC31E /* WarningCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningCustomTableViewCell.swift; sourceTree = "<group>"; };
+		FE37D6D21EF47F8E007ADC20 /* iMedicine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMedicine-Bridging-Header.h"; sourceTree = "<group>"; };
+		FE48CDEC1F0AD7BC00DA1342 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FE48CDEE1F0ADA5900DA1342 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FE48CDF01F0AE00900DA1342 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FE635F841F30874500C18160 /* MedDBNew.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = MedDBNew.db; sourceTree = "<group>"; };
+		FE75803F1F41B35100F139B3 /* AboutCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutCustomTableViewCell.swift; sourceTree = "<group>"; };
+		FEC1ABB21EAE57B800887A58 /* iМедицина.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iМедицина.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC1ABB51EAE57B800887A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEC1ABBA1EAE57B800887A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEC1ABBF1EAE57B800887A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEC1ABC21EAE57B800887A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEC1ABC41EAE57B800887A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC1ABCC1EAE5A1F00887A58 /* MedicineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
+		FEC1ABCE1EAE5D2100887A58 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FEC1ABD01EAE833500887A58 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FEC1ABD41EB272C700887A58 /* MedicineCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineCustomTableViewCell.swift; sourceTree = "<group>"; };
+		FEC795BB1F2125FB0037460D /* StructOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructOperation.swift; sourceTree = "<group>"; };
+		FEE81B3F1EFAD725006FCBC5 /* MedicineDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineDatabase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEC1ABAF1EAE57B800887A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE48CDF11F0AE00900DA1342 /* CoreLocation.framework in Frameworks */,
+				FE48CDED1F0AD7BC00DA1342 /* MapKit.framework in Frameworks */,
+				AE023A563A56EA71C91C4232 /* Pods_iMedicine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DEE2310BB7AB2257851E046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE48CDF01F0AE00900DA1342 /* CoreLocation.framework */,
+				FE48CDEC1F0AD7BC00DA1342 /* MapKit.framework */,
+				DD57F106B3735000AFEB268D /* Pods_iMedicine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEC1ABA91EAE57B800887A58 = {
+			isa = PBXGroup;
+			children = (
+				FEC1ABB41EAE57B800887A58 /* iMedicine */,
+				FEC1ABB31EAE57B800887A58 /* Products */,
+				FE37D6D21EF47F8E007ADC20 /* iMedicine-Bridging-Header.h */,
+				FFEC6EE18FCFA8DB57D98910 /* Pods */,
+				8DEE2310BB7AB2257851E046 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEC1ABB31EAE57B800887A58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEC1ABB21EAE57B800887A58 /* iМедицина.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEC1ABB41EAE57B800887A58 /* iMedicine */ = {
+			isa = PBXGroup;
+			children = (
+				FE1D89021F36295F00379625 /* MarkerInfoView.swift */,
+				FE1D89041F36297800379625 /* MarkerInfoView.xib */,
+				FE1D890C1F3A794200379625 /* ActivityIndicatorView.swift */,
+				FE1D89081F391F5F00379625 /* LocationView.xib */,
+				FE1D890A1F39263F00379625 /* LocationView.swift */,
+				FEC795BB1F2125FB0037460D /* StructOperation.swift */,
+				FE635F841F30874500C18160 /* MedDBNew.db */,
+				FE24ED871EF9F0FA004F34F9 /* MedicineDatabaseClass.swift */,
+				FEE81B3F1EFAD725006FCBC5 /* MedicineDatabase.swift */,
+				FEC1ABCC1EAE5A1F00887A58 /* MedicineTableViewController.swift */,
+				FEC1ABB51EAE57B800887A58 /* AppDelegate.swift */,
+				FE07FD321F0EAC6D0040B060 /* SearchModel.swift */,
+				FE1D89061F37787900379625 /* SearchPlaceModel.swift */,
+				FEC1ABB91EAE57B800887A58 /* Main.storyboard */,
+				FE75803F1F41B35100F139B3 /* AboutCustomTableViewCell.swift */,
+				FE2FFB0F1F1E3FF2002BC31E /* WarningTableViewController.swift */,
+				FE48CDEE1F0ADA5900DA1342 /* MapViewController.swift */,
+				FE2BB8C51EFC1ADF00727E70 /* AboutTableViewController.swift */,
+				FEC1ABD41EB272C700887A58 /* MedicineCustomTableViewCell.swift */,
+				FE2FFB111F1E4886002BC31E /* WarningCustomTableViewCell.swift */,
+				FEC1ABD01EAE833500887A58 /* DetailViewController.swift */,
+				FEC1ABCE1EAE5D2100887A58 /* CustomTableViewCell.swift */,
+				FEC1ABBF1EAE57B800887A58 /* Assets.xcassets */,
+				FEC1ABC11EAE57B800887A58 /* LaunchScreen.storyboard */,
+				FEC1ABC41EAE57B800887A58 /* Info.plist */,
+			);
+			path = iMedicine;
+			sourceTree = "<group>";
+		};
+		FFEC6EE18FCFA8DB57D98910 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3799D3194A7036D799E71DDD /* Pods-iMedicine.debug.xcconfig */,
+				C9D49F62DFBCF81DB68CF0F6 /* Pods-iMedicine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEC1ABB11EAE57B800887A58 /* iМедицина */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC1ABC71EAE57B800887A58 /* Build configuration list for PBXNativeTarget "iМедицина" */;
+			buildPhases = (
+				DA5C3932A4C9A0C68884E58E /* [CP] Check Pods Manifest.lock */,
+				FEC1ABAE1EAE57B800887A58 /* Sources */,
+				FEC1ABAF1EAE57B800887A58 /* Frameworks */,
+				FEC1ABB01EAE57B800887A58 /* Resources */,
+				17561624104D8E126A5A58A2 /* [CP] Embed Pods Frameworks */,
+				46B486E1E9E49F4305B0FC90 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iМедицина";
+			productName = iMedicine;
+			productReference = FEC1ABB21EAE57B800887A58 /* iМедицина.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEC1ABAA1EAE57B800887A58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Иван Базаров";
+				TargetAttributes = {
+					FEC1ABB11EAE57B800887A58 = {
+						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FEC1ABAD1EAE57B800887A58 /* Build configuration list for PBXProject "iМедицина" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEC1ABA91EAE57B800887A58;
+			productRefGroup = FEC1ABB31EAE57B800887A58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEC1ABB11EAE57B800887A58 /* iМедицина */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEC1ABB01EAE57B800887A58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC1ABC31EAE57B800887A58 /* LaunchScreen.storyboard in Resources */,
+				FE635F851F30874500C18160 /* MedDBNew.db in Resources */,
+				FE1D89091F391F5F00379625 /* LocationView.xib in Resources */,
+				FEC1ABC01EAE57B800887A58 /* Assets.xcassets in Resources */,
+				FE1D89051F36297800379625 /* MarkerInfoView.xib in Resources */,
+				FEC1ABBB1EAE57B800887A58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17561624104D8E126A5A58A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMedicine/Pods-iMedicine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B486E1E9E49F4305B0FC90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMedicine/Pods-iMedicine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA5C3932A4C9A0C68884E58E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEC1ABAE1EAE57B800887A58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7580401F41B35100F139B3 /* AboutCustomTableViewCell.swift in Sources */,
+				FE1D89031F36295F00379625 /* MarkerInfoView.swift in Sources */,
+				FE1D890B1F39263F00379625 /* LocationView.swift in Sources */,
+				FE1D89071F37787900379625 /* SearchPlaceModel.swift in Sources */,
+				FEC1ABB61EAE57B800887A58 /* AppDelegate.swift in Sources */,
+				FEC1ABCD1EAE5A1F00887A58 /* MedicineTableViewController.swift in Sources */,
+				FEC1ABD11EAE833500887A58 /* DetailViewController.swift in Sources */,
+				FE07FD331F0EAC6D0040B060 /* SearchModel.swift in Sources */,
+				FE48CDEF1F0ADA5900DA1342 /* MapViewController.swift in Sources */,
+				FE2BB8C61EFC1ADF00727E70 /* AboutTableViewController.swift in Sources */,
+				FEC795BC1F2125FB0037460D /* StructOperation.swift in Sources */,
+				FE2FFB121F1E4886002BC31E /* WarningCustomTableViewCell.swift in Sources */,
+				FEC1ABD51EB272C700887A58 /* MedicineCustomTableViewCell.swift in Sources */,
+				FE24ED881EF9F0FA004F34F9 /* MedicineDatabaseClass.swift in Sources */,
+				FE2FFB101F1E3FF2002BC31E /* WarningTableViewController.swift in Sources */,
+				FEE81B401EFAD725006FCBC5 /* MedicineDatabase.swift in Sources */,
+				FEC1ABCF1EAE5D2100887A58 /* CustomTableViewCell.swift in Sources */,
+				FE1D890D1F3A794200379625 /* ActivityIndicatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEC1ABB91EAE57B800887A58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC1ABBA1EAE57B800887A58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEC1ABC11EAE57B800887A58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC1ABC21EAE57B800887A58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEC1ABC51EAE57B800887A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEC1ABC61EAE57B800887A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEC1ABC81EAE57B800887A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3799D3194A7036D799E71DDD /* Pods-iMedicine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = iMedicine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elektro.CheapMedicine;
+				PRODUCT_NAME = "iМедицина";
+				SWIFT_OBJC_BRIDGING_HEADER = "iMedicine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEC1ABC91EAE57B800887A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D49F62DFBCF81DB68CF0F6 /* Pods-iMedicine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = iMedicine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elektro.CheapMedicine;
+				PRODUCT_NAME = "iМедицина";
+				SWIFT_OBJC_BRIDGING_HEADER = "iMedicine-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEC1ABAD1EAE57B800887A58 /* Build configuration list for PBXProject "iМедицина" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC1ABC51EAE57B800887A58 /* Debug */,
+				FEC1ABC61EAE57B800887A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC1ABC71EAE57B800887A58 /* Build configuration list for PBXNativeTarget "iМедицина" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC1ABC81EAE57B800887A58 /* Debug */,
+				FEC1ABC91EAE57B800887A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEC1ABAA1EAE57B800887A58 /* Project object */;
+}
